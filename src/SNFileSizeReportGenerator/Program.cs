@@ -39,7 +39,7 @@ namespace SNFileSizeReportGenerator
                     sqlConnection1.Open();
                     string queryFirstPart = "SELECT V.VersionId ,N.Path ,N.DisplayName ,N.Name ,[ContentType] , SPS.Name as NodeTypeName ,[FileNameWithoutExtension] ,[Extension] ,[Size] ";
                     string countQueryFirstPart = "SELECT Count(BP.BinaryPropertyId) ";
-                    string baseQueryText = "FROM[accelsiors].[dbo].[BinaryProperties] as BP INNER JOIN Versions as V ON  BP.VersionId = V.VersionId INNER JOIN Nodes as N ON V.NodeId = N.NodeId  INNER JOIN SchemaPropertySets  SPS ON SPS.PropertySetId = N.NodeTypeId  ";
+                    string baseQueryText = "FROM [BinaryProperties] as BP INNER JOIN Versions as V ON  BP.VersionId = V.VersionId INNER JOIN Nodes as N ON V.NodeId = N.NodeId  INNER JOIN SchemaPropertySets  SPS ON SPS.PropertySetId = N.NodeTypeId  ";
                     
                     //Feltételek összerakása
                     string queryFilter = string.Empty;
