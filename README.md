@@ -1,8 +1,6 @@
 # SenseNet-File-Size-Report-Generator
 This is a simple tool for generating reports about the file sizes in the [SenseNet ECM](https://github.com/SenseNet/sensenet) repository.
 
-It is based on [Sense/Net Client library for .Net](https://github.com/SenseNet/sn-client-dotnet)
-
 # Usage 
 
 The tool collects the number of versions, and summerize the size of these version for each file, in the database.
